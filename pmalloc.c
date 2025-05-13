@@ -539,7 +539,7 @@ pmalloc(size_t nbytes)
 void*
 prealloc(void* prev, size_t nn)
 {
-  size_t *new = xmalloc(nn);
+	size_t *new = xmalloc(nn);
 	size_t *ptr = (size_t*)prev-1;
 	//printf("xrealloc(%ld, %ld)\n", *ptr, nn);
 	
